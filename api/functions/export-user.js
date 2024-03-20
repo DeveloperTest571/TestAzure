@@ -31,7 +31,7 @@ module.exports = {
       
           // Create a temporary file name
           const filename = `users-${Date.now()}.csv`;
-          const filePath = path.join(__dirname, 'exports', filename);
+          const filePath = path.join(__dirname, '../../uploads', filename);
       
           // Write CSV content to the temporary file (optional error handling)
           fs.writeFile(filePath, csvContent, (err) => {
