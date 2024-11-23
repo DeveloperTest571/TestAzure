@@ -30,4 +30,4 @@ jobs:
 
     - name: Deploy to Azure VM
       run: |
-        ssh -o StrictHostKeyChecking=no AzureDev@13.64.63.155 ''cd /home/AzureDev/TestAzure  && git pull origin main && npm install && npm run build && pm2 restart myApp'
+        ssh -o StrictHostKeyChecking=no AzureDev@13.64.63.155 ''cd /home/AzureDev/TestAzure  && git pull origin main && npm install && npm run build && pm2 restart TestAzure'
